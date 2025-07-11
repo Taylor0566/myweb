@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+
+/* 明确的暗黑模式测试样式 */
+.dark body {
+  background-color: #11001F !important;
+  color: white !important;
+}
+
+/* 用于测试暗黑模式选择器是否工作 */
+html.dark {
+  --test-dark-active: 1;
+}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  /* 设置中文字体规则 - 使用艺术风格字体 */
+  html[lang="zh"] body {
+    font-family: var(--font-zcool-xiaowei), sans-serif;
+  }
+  
+  .zh-text {
+    font-family: var(--font-zcool-xiaowei), sans-serif;
+  }
+  
+  /* 为标题使用更艺术的书法风格 */
+  .zh-title {
+    font-family: var(--font-ma-shan-zheng), sans-serif;
+  }
+  
+  /* 英文文本使用原有字体 */
+  .en-text {
+    font-family: var(--font-outfit), var(--font-ovo), sans-serif;
+  }
+}
