@@ -14,9 +14,9 @@ const Footer = ({isDarkMode, language}) => {
         </div>
         <p className={`text-gray-500 my-4 md:my-0 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>© {year} LiangShengFu. {t.rightsReserved}.</p>
         <div className='flex items-center gap-5'>
-            <a href="#" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>Facebook</a>
-            <a href="#" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>Twitter</a>
-            <a href="#" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>Instagram</a>
+            <a href="https://github.com/Taylor0566" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>Github</a>
+            <a href="https://www.linkedin.com/in/升富-梁-616509374/" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>LinkedIn</a>
+            <a href="https://gitee.com/lsf0566" className={`text-gray-500 dark:text-white/60 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>Giee</a>
         </div>
     </div>
   )
