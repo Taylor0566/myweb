@@ -20,7 +20,7 @@ const Header = ({isDarkMode, language}) => {
             </motion.p>
             <motion.div initial={{y:-30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6,delay: 0.9}} className='flex flex-col sm:flex-row items-center justify-center gap-4 mt-4'>
                 <motion.a initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6,delay: 1}} href="#contact" className={`px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 ${language === 'zh' ? 'zh-text' : 'en-text'}`}>{t.contactMeButton}<Image src={assets.right_arrow_white} alt="" className='w-4' /></motion.a>
-                <motion.a initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6,delay: 1.2}} href="/sample-resume.pdf" download className={`px-10 py-3 border rounded-full flex items-center gap-2 ${isDarkMode ? 'bg-white text-black border-white' : 'border-gray-500'} ${language === 'zh' ? 'zh-text' : 'en-text'}`}>{t.myResume}<Image src={assets.download_icon} alt="" className='w-4' /></motion.a>
+                <motion.a initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration: 0.6,delay: 1.2}} href="/resume.pdf" download className={`px-10 py-3 border rounded-full flex items-center gap-2 ${isDarkMode ? 'bg-white text-black border-white' : 'border-gray-500'} ${language === 'zh' ? 'zh-text' : 'en-text'}`}>{t.myResume}<Image src={assets.download_icon} alt="" className='w-4' /></motion.a>
             </motion.div>
         
     </div>
