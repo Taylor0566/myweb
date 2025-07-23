@@ -36,7 +36,7 @@ export const translations = {
       contact: "联系",
       introduction: "介绍",
       aboutMeTitle: "关于我",
-      hiIm: "你好！我是梁生福",
+      hiIm: "你好！我是梁升富",
       frontendDeveloper: "一名来自中国深圳的前端开发者",
       developerDescription: "我是一名来自中国深圳的前端开发者，热衷于创建美观且功能强大的网站。",
       contactMeButton: "联系我",

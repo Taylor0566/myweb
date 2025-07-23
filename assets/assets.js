@@ -86,33 +86,43 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        titleZh: '前端项目',
-        description: 'Web Design',
-        descriptionZh: '网页设计',
+        title: 'Tianditu GIS Application Framework',
+        titleZh: '天地图GIS应用框架',
+        description: 'A modern GIS application framework based on Mapbox GL JS and Tianditu API, providing flexible basemap switching and geospatial analysis capabilities.',
+        descriptionZh: '基于Mapbox GL JS和天地图API的现代GIS应用框架，提供灵活的底图切换和地理空间分析功能',
+        url: 'https://github.com/Taylor0566/map',
         bgImage: '/work-1.png',
+        fullDescription: '这是一个集成天地图API和Mapbox GL JS的现代GIS应用框架，实现了矢量图、影像图和地形图三种底图类型切换，以及多种地理数据可视化方式。系统采用模块化设计，包含图层管理、绘图工具、空间分析等功能模块，并通过代理服务器解决跨域访问问题。项目基于Next.js和React构建，使用TypeScript确保代码类型安全，适合作为天地图应用开发的基础框架。',
+        technologies: ['Next.js', 'React', 'TypeScript', 'Mapbox GL JS', '天地图API', 'Zustand', 'TailwindCSS', 'Node.js'],
+        challenges: '项目主要挑战包括天地图API的跨域访问问题、多图层数据管理和渲染性能优化、地理空间数据的高效可视化表达，以及不同坐标系统间的精确转换。通过代理服务器、状态管理优化和图层按需加载等方案有效解决了这些问题。',
+        features: [
+            {name: '多底图支持', description: '集成矢量图、影像图和地形图三种底图类型，支持快速切换和混合显示'},
+            {name: '地理数据可视化', description: '内置热力图、蜂窝图、分级设色图等多种地理数据可视化方式，支持大规模地理数据的直观展示'},
+            {name: '空间分析工具', description: '提供区域绘制、空间查询和地理编码等功能，支持交互式空间分析和位置信息处理'}
+        ],
+        gallery: ['/map-screen1.png', '/map-screen2.png', '/map-screen3.png']
     },
-    {
-        title: 'Geo based app',
-        titleZh: '基于地理位置的应用',
-        description: 'Mobile App',
-        descriptionZh: '移动应用',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        titleZh: '摄影网站',
-        description: 'Web Design',
-        descriptionZh: '网页设计',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        titleZh: 'UI/UX 设计',
-        description: 'UI/UX Design',
-        descriptionZh: 'UI/UX 设计',
-        bgImage: '/work-4.png',
-    },
+    // {
+    //     title: 'Geo based app',
+    //     titleZh: '基于地理位置的应用',
+    //     description: 'Mobile App',
+    //     descriptionZh: '移动应用',
+    //     bgImage: '/work-2.png',
+    // },
+    // {
+    //     title: 'Photography site',
+    //     titleZh: '摄影网站',
+    //     description: 'Web Design',
+    //     descriptionZh: '网页设计',
+    //     bgImage: '/work-3.png',
+    // },
+    // {
+    //     title: 'UI/UX designing',
+    //     titleZh: 'UI/UX 设计',
+    //     description: 'UI/UX Design',
+    //     descriptionZh: 'UI/UX 设计',
+    //     bgImage: '/work-4.png',
+    // },
 ];
 
 export const serviceData = [
