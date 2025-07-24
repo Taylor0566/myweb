@@ -135,8 +135,8 @@ const ProjectDetail = () => {
               .filter((item, index) => index !== parseInt(id))
               .slice(0, 3)
               .map((item, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="project-card"
                   onClick={() => router.push(`/projects/${index}`)}
                   style={{ backgroundImage: `url(${item.bgImage})` }}
